@@ -1,0 +1,51 @@
+html,body{
+    height: 100%;
+}
+.btn-brac{
+    background-color: $bracify;
+    border-color: $bracify;
+    color: #fff !important;
+    &:hover{
+        background-color: darken($bracify, 10%);
+        border-color: darken($bracify, 10%);
+    }
+}
+.bg_section{
+    width: 100%;
+    // height: calc(100% - 93px);
+    height: 100%;
+    background: url(../images/emd_background.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    .txt_btn{
+        padding-left: 1rem;
+        // padding-bottom: 93px;
+        h2{
+            font-size: 60px;
+            color: #969696;
+            margin-bottom: 55px;
+        } 
+        .btn-brac{
+            &.sso{
+                font-weight: 700;
+                font-size: 22px;
+                border-radius: 25px;
+                padding: 8px 0;
+                width: 170px; 
+            }
+           
+            
+        }   
+    }
+}
+@media screen and (max-width: 767px){
+    .bg_section{
+        .txt_btn{
+            h2{
+                font-size: 45px;
+            }
+        }
+    }
+}

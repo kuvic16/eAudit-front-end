@@ -1,0 +1,215 @@
+.main-fold {
+  position: relative;
+  // height: calc(100% - 93px);
+  min-height: 100vh;
+  display: flex;
+  background: #efefef;
+}
+
+.container-custom {
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.sub-label {
+  color: #cccccc;
+  font-weight: 400;
+}
+.form-control {
+  &::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $placeholder;
+    opacity: 1; /* Firefox */
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $placeholder;
+  }
+
+  &::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $placeholder;
+  }
+}
+.page-content {
+  .inner-content-wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 25px 0px 0px 0px;
+
+    .page-content-header {
+      .inner_title {
+        font-size: 20px;
+        color: #000000;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+
+        .plan-status {
+          font-size: 10px;
+          margin-left: 5px;
+        }
+      }
+
+      .inner_description {
+        font-size: 14px;
+        color: #555b60;
+      }
+    }
+
+    .page-content-body {
+      margin-top: 20px;
+
+      .step-box {
+        max-width: 200px;
+        height: 320px;
+        background: #ffffff;
+        border-radius: 8px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .box-title {
+          text-align: center;
+          color: #a3a7ab;
+          font-size: 13px;
+        }
+
+        .box-section {
+          height: 100px;
+          background: #f2f2f2;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px;
+
+          .section-title {
+            font-weight: 500;
+            font-size: 11px;
+            color: #16191b;
+            text-align: center;
+          }
+
+          .section-counter-show {
+            font-weight: bold;
+            font-size: 14px;
+            color: #000000;
+            margin: 5px 0px;
+          }
+
+          .section-bottom-info {
+            font-size: 11px;
+            color: #a3a7ab;
+            text-align: center;
+
+            span {
+              color: #000000;
+            }
+          }
+        }
+
+        .box-info-section {
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          //   padding: 15px;
+
+          .section-header {
+            font-weight: 600;
+            font-size: 15px;
+            color: #16191b;
+            text-align: center;
+            margin-bottom: 15px;
+          }
+
+          .info {
+            font-size: 11px;
+            color: #555b60;
+            text-align: center;
+          }
+
+          .box-icon {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            margin: auto;
+            display: flex;
+
+            i {
+              font-size: 25px;
+              margin: auto;
+            }
+          }
+
+          .box-icon-1 {
+            background: #ffecdb;
+            i {
+              color: #cf680b;
+            }
+          }
+
+          .box-icon-2 {
+            background: #dbffe9;
+            i {
+              color: #08943e;
+            }
+          }
+
+          .box-icon-3 {
+            background: #dbe3ff;
+            i {
+              color: #244ad0;
+            }
+          }
+        }
+
+        .btn {
+          background: #0065ff;
+          border-radius: 8px;
+          font-size: 11px;
+        }
+      }
+    }
+
+    .page-content-footer {
+      margin: 10px 0px 10px 0px;
+
+      .view-all-plans-link {
+        font-size: 13px;
+        color: #16191b;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+  }
+
+  width: 100%;
+  // width: calc(100% - 396px);
+  // background: #efefef;
+  padding-top: 65px;
+}
+.sub_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 57px;
+  margin-bottom: 20px;
+  #add_another {
+    color: $bracify;
+    text-decoration: none !important;
+  }
+  .btn-brac {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    span {
+      margin-right: 13px;
+      font-size: 16px;
+    }
+  }
+}

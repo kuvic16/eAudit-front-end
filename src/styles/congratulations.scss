@@ -1,0 +1,41 @@
+#policy-submitted{
+    background:url(../images/emd_background.jpg) center no-repeat;
+    background-size: 200%;
+    .inner-content-wrapper{
+        width: 308px;
+        margin: 0;
+        margin-top: 19px;
+        margin-left: 140px;
+        text-align: center;
+        h2{
+           
+            font-size: 30px;
+            
+        }
+        .green-check{
+            margin-bottom: 20px;
+            margin-top: 20px;
+
+        }
+        p{
+            font-size: 20px;
+            margin-bottom: 73px;
+            color: #4D4F53;
+        }
+        #add_new_disclosure{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 263px;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+            img{
+                margin-right: 16px;
+            }
+        }
+    }
+}
