@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>eAudit - Annual Audit Plan</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <nav class="container-custom topbar-nav navbar">
+        <a class="navbar-brand" href="#">
+          <img
+            class="img-fluid logo"
+            src="src/images/brac-logo.svg"
+            alt="Brac"
+          />
+        </a>
+        <div class="topbar-dropdowns">
+          <div class="dropdown user-dd">
+            <div
+              class="user-profile-toggle dropdown-toggle"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img class="profile-picture" src="src/images/person.jpg" alt="" />
+              <p>
+                <strong>Shaiful Islam</strong>
+                <span>Administrator</span>
+              </p>
+            </div>
+
+            <div class="dropdown-menu fw-dropdown-menu datatree-menu">
+              <a class="dropdown-item" href="#">
+                <img
+                  class="menu-item-img"
+                  src="src/images/svg/profile.svg"
+                  alt="Profile"
+                />
+                <span>My Usage</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <img
+                  class="menu-item-img"
+                  src="src/images/svg/sign_out.svg"
+                  alt="Sign Out"
+                />
+                <span>Sign Out</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main class="schedule-step1-fold">
+      <div class="container-custom">
+        <section class="page-content">
+          <div class="inner-content-wrapper">
+            <ul class="nav nav-tabs schedule-steps-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="set-capacity-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#setCapacity"
+                  type="button"
+                  role="tab"
+                  aria-controls="setCapacity"
+                  aria-selected="true"
+                >
+                  <div class="steps-number">1</div>
+                  Set Capacity
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="mandays-allocation-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#mandaysAllocation"
+                  type="button"
+                  role="tab"
+                  aria-controls="mandaysAllocation"
+                  aria-selected="false"
+                >
+                  <div class="steps-number">2</div>
+                  Mandays Allocation
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="set-target-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#setTarget"
+                  type="button"
+                  role="tab"
+                  aria-controls="setTarget"
+                  aria-selected="false"
+                >
+                  <div class="steps-number">3</div>
+                  Set Target
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="audit-allocation-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#auditAllocation"
+                  type="button"
+                  role="tab"
+                  aria-controls="auditAllocation"
+                  aria-selected="false"
+                >
+                  <div class="steps-number">4</div>
+                  Audit Allocation
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="scheduleStepsTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="setCapacity"
+                role="tabpanel"
+                aria-labelledby="set-capacity-tab"
+              >
+                <div class="page-content-header">
+                  <h3 class="inner_title">Set Capacity</h3>
+                  <div class="buttons">
+                    <button class="btn btn-light m-r-10">Save as Draft</button>
+                    <button class="btn btn-primary">Next</button>
+                  </div>
+                </div>
+                <div class="page-content-body">
+                  <div class="row">
+                    <div
+                      class="col-12 col-sm-12 col-lg-8 col-md-12 capacity-box"
+                    >
+                      <div class="box-sections">
+                        <div class="box-section m-b-10">
+                          <span class="section-title"
+                            >Field Visit Capacity</span
+                          >
+                          <label class="section-counter-show">12,567</label>
+
+                          <input class="form-control-sm" placeholder="10%" />
+
+                          <span class="section-bottom-info"
+                            >Based on <span>10%</span> value top value will be
+                            changed</span
+                          >
+                        </div>
+                        <div class="box-section">
+                          <span class="section-title"
+                            >Report Writing Capacity</span
+                          >
+                          <label class="section-counter-show">10,456</label>
+
+                          <input class="form-control-sm" placeholder="10%" />
+
+                          <span class="section-bottom-info"
+                            >Based on <span>10%</span> value top value will be
+                            changed</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="page-content-footer"></div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="mandaysAllocation"
+                role="tabpanel"
+                aria-labelledby="mandays-allocation-tab"
+              >
+                mandaysAllocation
+              </div>
+              <div
+                class="tab-pane fade"
+                id="setTarget"
+                role="tabpanel"
+                aria-labelledby="set-target-tab"
+              >
+                setTarget
+              </div>
+              <div
+                class="tab-pane fade"
+                id="auditAllocation"
+                role="tabpanel"
+                aria-labelledby="audit-allocation-tab"
+              >
+                auditAllocation
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
