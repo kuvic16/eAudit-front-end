@@ -27,27 +27,7 @@ module.exports = {
       { from: Path.resolve(__dirname, '../src/images'), to: 'src/images' },
     ]),
     new HtmlWebpackPlugin({
-      template: Path.resolve(__dirname, '../src/index.html')
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'disclosure-form.html',
-      template: Path.resolve(__dirname, '../src/disclosure-form.html'),
-      inject: true,
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'policy-agreement.html',
-      template: Path.resolve(__dirname, '../src/policy-agreement.html'),
-      inject: true,
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'congratulations.html',
-      template: Path.resolve(__dirname, '../src/congratulations.html'),
-      inject: true,
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'review-disclosure.html',
-      template: Path.resolve(__dirname, '../src/review-disclosure.html'),
-      inject: true,
+      template: Path.resolve(__dirname, '../src/annual-audit-plan-new-form.html')
     }),
     new HtmlWebpackPlugin({
       filename: 'annual-audit-plan-form.html',

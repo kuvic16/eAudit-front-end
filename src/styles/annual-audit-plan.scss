@@ -109,6 +109,14 @@
             span {
               color: #000000;
             }
+
+            input {
+              width: 60px;
+              height: 30px;
+              border: 1px solid lightgray;
+              text-align: center;
+              font-size: 13px;
+            }
           }
         }
 
@@ -170,7 +178,7 @@
 
         .btn {
           background: #0065ff;
-          border-radius: 8px;
+          // border-radius: 8px;
           font-size: 11px;
         }
       }
