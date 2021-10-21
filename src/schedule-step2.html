@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>eAudit - Annual Audit Plan</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <nav class="container-custom topbar-nav navbar">
+        <a class="navbar-brand" href="#">
+          <img
+            class="img-fluid logo"
+            src="src/images/brac-logo.svg"
+            alt="Brac"
+          />
+        </a>
+        <div class="topbar-dropdowns">
+          <div class="dropdown user-dd">
+            <div
+              class="user-profile-toggle dropdown-toggle"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img class="profile-picture" src="src/images/person.jpg" alt="" />
+              <p>
+                <strong>Shaiful Islam</strong>
+                <span>Administrator</span>
+              </p>
+            </div>
+
+            <div class="dropdown-menu fw-dropdown-menu datatree-menu">
+              <a class="dropdown-item" href="#">
+                <img
+                  class="menu-item-img"
+                  src="src/images/svg/profile.svg"
+                  alt="Profile"
+                />
+                <span>My Usage</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <img
+                  class="menu-item-img"
+                  src="src/images/svg/sign_out.svg"
+                  alt="Sign Out"
+                />
+                <span>Sign Out</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main class="schedule-step2-fold">
+      <div class="container-custom">
+        <section class="page-content">
+          <div class="inner-content-wrapper">
+            <ul class="nav nav-tabs schedule-steps-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="set-capacity-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#setCapacity"
+                  type="button"
+                  role="tab"
+                  aria-controls="setCapacity"
+                  aria-selected="true"
+                >
+                  <div class="steps-number">1</div>
+                  Set Capacity
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="mandays-allocation-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#mandaysAllocation"
+                  type="button"
+                  role="tab"
+                  aria-controls="mandaysAllocation"
+                  aria-selected="false"
+                >
+                  <div class="steps-number">2</div>
+                  Mandays Allocation
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="set-target-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#setTarget"
+                  type="button"
+                  role="tab"
+                  aria-controls="setTarget"
+                  aria-selected="false"
+                >
+                  <div class="steps-number">3</div>
+                  Set Target
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="audit-allocation-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#auditAllocation"
+                  type="button"
+                  role="tab"
+                  aria-controls="auditAllocation"
+                  aria-selected="false"
+                >
+                  <div class="steps-number">4</div>
+                  Audit Allocation
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="scheduleStepsTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="mandaysAllocation"
+                role="tabpanel"
+                aria-labelledby="mandays-allocation-tab"
+              >
+                <div class="page-content-header">
+                  <h3 class="inner_title">Mandays Allocation</h3>
+                  <div class="buttons">
+                    <button class="btn btn-light m-r-10">Save as Draft</button>
+                    <button class="btn btn-primary">Next</button>
+                  </div>
+                </div>
+                <div class="page-content-body">
+                  <div class="row">
+                    <ul
+                      class="nav nav-tabs mandays-allocation-tabs"
+                      role="tablist"
+                    >
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="risk-based-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#riskBased"
+                          type="button"
+                          role="tab"
+                          aria-controls="riskBased"
+                          aria-selected="true"
+                        >
+                          Risk Based
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="non-risk-based-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#nonRiskBased"
+                          type="button"
+                          role="tab"
+                          aria-controls="nonRiskBased"
+                          aria-selected="false"
+                        >
+                          Non Risk Based
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="mandaysAllocationTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="riskBased"
+                        role="tabpanel"
+                        aria-labelledby="risk-based-tab"
+                      >
+                        <div class="table-responsive">
+                          <table class="table table-bordered">
+                            <tbody>
+                              <tr class="t-header">
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">Projects</span>
+                                  </div>                            
+                                </td>
+                                <td scope="col" class="name text-align-right">
+                                  Risk Life Cycle
+                                </td>
+                                <td scope="col">
+                                  <div class="timeline">
+                                    <div class="symbol red"><span>E</span></div>
+                                    <span class="symbol-label">3 Months</span>
+                                  </div>
+                                </td>
+                                <td scope="col">
+                                  <div class="timeline">
+                                    <div class="symbol orange">
+                                      <span>S</span>
+                                    </div>
+                                    <span class="symbol-label">6 Months</span>
+                                  </div>
+                                </td>
+                                <td scope="col">
+                                  <div class="timeline">
+                                    <div class="symbol yellow">
+                                      <span>M</span>
+                                    </div>
+                                    <span class="symbol-label">12 Months</span>
+                                  </div>
+                                </td>
+                                <td scope="col">
+                                  <div class="timeline">
+                                    <div class="symbol velvet">
+                                      <span>H</span>
+                                    </div>
+                                    <span class="symbol-label">18 Months</span>
+                                  </div>
+                                </td>
+                                <td scope="col">
+                                  <div class="timeline">
+                                    <div class="symbol blue">
+                                      <span>L</span>
+                                    </div>
+                                    <span class="symbol-label">24 Months</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">DABI</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">Pragati</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">BCUP</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">DABI</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">Pragati</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">BCUP</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">DABI</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">Pragati</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">BCUP</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">DABI</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">Pragati</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">BCUP</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">DABI</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">Pragati</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="col" class="project-col">
+                                  <div class="p-box">
+                                    <div class="project">BCUP</span>
+                                  </div>                            
+                                </td>
+                                <td class="text-align-right">
+                                  <div class="input-allocation-label">
+                                    <span>Last Year Mandays</span>
+                                    <span>Required Exp. Mandays</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-allocation">
+                                    <span>1315</span>
+                                    <input placeholder="10" >
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="page-content-footer"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

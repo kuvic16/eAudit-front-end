@@ -39,6 +39,11 @@ module.exports = {
       template: Path.resolve(__dirname, '../src/schedule-step1.html'),
       inject: true,
     }),
+    new HtmlWebpackPlugin({
+      filename: 'schedule-step2.html',
+      template: Path.resolve(__dirname, '../src/schedule-step2.html'),
+      inject: true,
+    }),
     
     new webpack.ProvidePlugin({
       $: "jquery",
